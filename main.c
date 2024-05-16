@@ -5,16 +5,17 @@
 
 struct phoneBook
 {
-    char name[25];
+    char name[30];
     char num[20];
     char mail[50];
 } person1, person2;
-void inputName(char name[25])
+
+void inputName(char name[30])
 {
     printf("Enter name: ");
-    fgets(name, 25, stdin);
+    fgets(name, 30, stdin);
 }
-void inputNum(char num[25])
+void inputNum(char num[30])
 {
     printf("Enter Your Contact Number with Country code: ");
     scanf("%s", num);
@@ -25,10 +26,11 @@ void inputmail(char mail[50])
     printf("Enter your Email Address: ");
     scanf("%s", mail);
 }
+
 int main()
 {
     // Person1 input
-    char a[25], b[20];
+    char a[30], b[20];
     char p[50];
     printf("Hello! Welcome to PhoneBook App.\n\n");
     inputName(a);
@@ -45,10 +47,9 @@ int main()
     printf("Do you want to register another contact? (y/n): ");
     scanf("%s", &secondReg);
     getchar();
-    if (secondReg == 'y')
+    if (secondReg == 'y' || strcmp(&secondReg, "yes") == 0 || strcmp(&secondReg, "YES") == 0 || secondReg == 'Y')
     {
-
-        char c[25], d[20];
+        char c[30], d[20];
         char q[50];
         printf("Second person Registration:\n\n");
 
@@ -56,20 +57,20 @@ int main()
         strcpy(person2.name, c);
 
         inputNum(d);
-
         strcpy(person2.num, d);
 
         inputmail(q);
         strcpy(person2.mail, q);
     }
+
     char confirm;
-    printf("You have Successfully Registered yourself. Want to see how it turned out? (y/n):");
+    printf("\nYou have Successfully Registered yourself. Want to see how it turned out? (y/n):");
     scanf("%s", &confirm);
     getchar();
-    if (confirm == 'y')
+    if (confirm == 'y' || strcmp(&confirm, "yes") == 0 || strcmp(&confirm, "YES") == 0 || confirm == 'Y')
     {
         printf("\n\nPhoneBook Person Details:\nName: %sContact Number: %s\nEmail Address: %s\n", person1.name, person1.num, person1.mail);
-        if (secondReg == 'y')
+        if (secondReg == 'y' || strcmp(&secondReg, "yes") == 0 || strcmp(&secondReg, "YES") == 0 || secondReg == 'Y')
         {
             printf("\n\nName: %sContact Number: %s\nEmail Address: %s\n", person2.name, person2.num, person2.mail);
         }
