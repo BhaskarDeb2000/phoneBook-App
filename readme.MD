@@ -6,4 +6,4 @@ In this app, you'll be able to register two people's Name, Contact Number and Em
 
 # AppDemo
 
-![PhoneBookAppDemo](./demoVid/b768bbb4-4c9c-4914-99d7-6848d8e0159c.gif)
+<img src="./demoVid/ScreenRecording2024-05-17at22.24.45-ezgif.com-optimize.gif"  width="1000"/>
