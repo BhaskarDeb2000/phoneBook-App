@@ -6,4 +6,4 @@ In this app, you'll be able to register two people's Name, Contact Number and Em
 
 # AppDemo
 
-<img src="./demoVid/ScreenRecording2024-05-17at22.24.45-ezgif.com-optimize.gif"  width="1000"/>
+<img src="./demoVid/Screen Recording 2024-05-17 at 22.gif" width=1920/>
